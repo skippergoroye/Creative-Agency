@@ -9,11 +9,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        nunito: ['var(--font-nunito)'],
+        quicksand: ['var(--font-quicksand)'],
       },
+      colors: {
+        "primary": "#377DFF",
+        "dark": "#1D1D1D",
+        green: {
+          50: '#30AF5B',
+          90: '#292C27',
+        },
+      }
     },
   },
   plugins: [],
