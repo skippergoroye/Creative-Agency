@@ -15,7 +15,7 @@ const Navbar = () => {
           className="hidden md:block" // show on desktop
         />
         <Image
-          src="/SVG/creative-agency.svg" 
+          src="/SVG/creative-agency.svg"
           alt="creative-logo"
           width={91}
           height={40}
@@ -23,20 +23,29 @@ const Navbar = () => {
         />
       </Link>
 
-
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
           <Link href={link.href} key={link.key}>
-            {link.label }
+            {link.label}
           </Link>
         ))}
       </ul>
 
       <div className="hidden lg:flex">
-        <Button type="button" title="Contact us"  variant="border-blue-400 border font-quicksand text-primary"/>
+        <Button
+          type="button"
+          title="Contact us"
+          variant="border-blue-400 border font-quicksand text-primary"
+        />
       </div>
 
-      <Image src="/SVG/menu.svg" alt="menu-svg" width={29} height={25} className="lg:hidden cursor-pointer inline-block" />
+      <Image
+        src="/SVG/menu.svg"
+        alt="menu-svg"
+        width={29}
+        height={25}
+        className="lg:hidden cursor-pointer inline-block"
+      />
     </nav>
   );
 };

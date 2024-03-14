@@ -29,7 +29,7 @@ const Hero = () => {
             className="lg:hidden"
           />
           <Image
-            src="/SVG/hero-desktop.svg"
+            src="/SVG/hero-desktop.svg" // desktop
             alt="hero-iamge"
             width={986}
             height={378}
@@ -37,6 +37,17 @@ const Hero = () => {
           />
         </div>
       </div>
+
+
+      {/* side ball  */}
+        <div className="absolute top-80 left-20 hidden md:block">
+          <Image src="/SVG/blue-ball.svg" alt="blue-ball" width={50} height={10} />
+        </div>
+
+        <div className="absolute top-56 right-0 hidden md:block">
+           <Image src="/SVG/red-ball.svg" alt="red-ball" width={30} height={10} />
+        </div>
+      
     </section>
   );
 };
