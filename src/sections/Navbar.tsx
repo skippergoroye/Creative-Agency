@@ -33,7 +33,7 @@ const Navbar = () => {
       </ul>
 
       <div className="hidden lg:flex">
-        <Button type="button" title="Contact us"  variant="border-blue-400 border font-quicksand"/>
+        <Button type="button" title="Contact us"  variant="border-blue-400 border font-quicksand text-primary"/>
       </div>
 
       <Image src="/SVG/menu.svg" alt="menu-svg" width={29} height={25} className="lg:hidden cursor-pointer inline-block" />

@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`relative overflow-hidden ${nunito.variable} ${quicksand.variable}`}>
+      <body className={`relative ${nunito.variable} ${quicksand.variable}`}>
         <Navbar />
           <main>{children}</main>
         <Footer />
