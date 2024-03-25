@@ -26,14 +26,14 @@ const Hero = () => {
             alt="hero-iamge"
             width={330}
             height={244}
-            className="lg:hidden"
+            className="md:hidden"
           />
           <Image
             src="/SVG/hero-desktop.svg" // desktop
             alt="hero-iamge"
             width={986}
             height={378}
-            className="hidden lg:flex"
+            className="hidden md:flex"
           />
         </div>
       </div>

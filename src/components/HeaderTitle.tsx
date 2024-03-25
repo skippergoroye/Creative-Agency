@@ -3,15 +3,16 @@ import React from "react";
 type Props = {
   title: string;
   subtitle: string;
+  variant: string;
 };
 
-export default function HeaderTitle({ title, subtitle }: Props) {
+export default function HeaderTitle({ title, subtitle, variant }: Props) {
   return (
-    <div className={`flex flex-col justify-center items-center lg:gap-4 lg:mb-8`}>
-      <p className="text-primary text-[24px] font-semibold font-quicksand text-center">
+    <div className={`${variant}`}>
+      <p className="text-primary text-[20px] font-semibold font-quicksand py-3">
         {title}
       </p>
-      <p className="text-darkcolor text-lg lg:text-[55px] font-bold font-nunito">
+      <p className="text-darkcolor text-[24px] lg:text-[35px] font-quicksand font-bold">
         {subtitle}
       </p>
     </div>

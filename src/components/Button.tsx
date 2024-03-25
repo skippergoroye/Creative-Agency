@@ -8,6 +8,8 @@ type Props = {
   variant: string;
 };
 
+
+
 const Button = ({ type, title, icon, variant}: Props) => {
   return (
   <button type={type} className={`${variant} flex items-center justify-center gap-2 px-8 p-2 rounded-full`}>
