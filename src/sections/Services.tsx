@@ -1,6 +1,11 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
-import HeaderTitle from "@/components/HeaderTitle";
+import { FEATURES } from "@/constants";
+import { HeaderTitle, ServicesCard } from "@/components";
+
+
+
+
 
 const Services = () => {
   return (
@@ -22,10 +27,11 @@ const Services = () => {
             <FaArrowRightLong color="#377DFF" />
           </Link>
         </div>
-        <div>
-          <div>kkfkkfkfk</div>
-          <div>kkfkkfkfk</div>
-          <div>kkfkkfkfk</div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {FEATURES.map((service, index) => (
+            <ServicesCard {...service} key={index} />
+          ))}
         </div>
       </div>
     </section>

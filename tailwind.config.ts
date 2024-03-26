@@ -17,6 +17,7 @@ const config: Config = {
         "primary": "#377DFF",
         "darkcolor": "#1D1D1D",
         "graycolor": "#464646",
+        "footercolor": "#383638",
         green: {
           50: '#30AF5B',
           90: '#292C27',
